@@ -56,3 +56,5 @@ dkms.conf
 
 #zip file
 *.zip
+
+.DS_Store/
