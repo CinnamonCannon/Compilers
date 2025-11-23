@@ -1,0 +1,522 @@
+--- mini C parser start ---
+reduced rule number = 13
+reduced rule number = 11
+reduced rule number = 9
+reduced rule number = 14
+reduced rule number = 12
+reduced rule number = 10
+reduced rule number = 8
+reduced rule number = 33
+reduced rule number = 32
+reduced rule number = 29
+reduced rule number = 28
+reduced rule number = 5
+reduced rule number = 2
+reduced rule number = 15
+reduced rule number = 12
+reduced rule number = 9
+reduced rule number = 8
+reduced rule number = 16
+reduced rule number = 19
+reduced rule number = 17
+reduced rule number = 7
+reduced rule number = 14
+reduced rule number = 12
+reduced rule number = 9
+reduced rule number = 8
+reduced rule number = 33
+reduced rule number = 31
+reduced rule number = 29
+reduced rule number = 33
+reduced rule number = 31
+reduced rule number = 30
+reduced rule number = 33
+reduced rule number = 31
+reduced rule number = 30
+reduced rule number = 28
+reduced rule number = 26
+reduced rule number = 14
+reduced rule number = 12
+reduced rule number = 9
+reduced rule number = 8
+reduced rule number = 33
+reduced rule number = 31
+reduced rule number = 29
+reduced rule number = 33
+reduced rule number = 31
+reduced rule number = 30
+reduced rule number = 28
+reduced rule number = 27
+reduced rule number = 24
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 96
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 65
+reduced rule number = 63
+reduced rule number = 61
+reduced rule number = 54
+reduced rule number = 55
+reduced rule number = 53
+reduced rule number = 47
+reduced rule number = 46
+reduced rule number = 42
+reduced rule number = 39
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 72
+reduced rule number = 65
+reduced rule number = 63
+reduced rule number = 61
+reduced rule number = 54
+reduced rule number = 53
+reduced rule number = 25
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 96
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 65
+reduced rule number = 63
+reduced rule number = 61
+reduced rule number = 54
+reduced rule number = 55
+reduced rule number = 53
+reduced rule number = 47
+reduced rule number = 46
+reduced rule number = 42
+reduced rule number = 39
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 96
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 78
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 65
+reduced rule number = 63
+reduced rule number = 61
+reduced rule number = 54
+reduced rule number = 55
+reduced rule number = 53
+reduced rule number = 47
+reduced rule number = 46
+reduced rule number = 42
+reduced rule number = 40
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 96
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 65
+reduced rule number = 63
+reduced rule number = 61
+reduced rule number = 54
+reduced rule number = 55
+reduced rule number = 53
+reduced rule number = 47
+reduced rule number = 46
+reduced rule number = 42
+reduced rule number = 40
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 72
+reduced rule number = 65
+reduced rule number = 63
+reduced rule number = 61
+reduced rule number = 54
+reduced rule number = 53
+reduced rule number = 25
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 79
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 65
+reduced rule number = 63
+reduced rule number = 61
+reduced rule number = 54
+reduced rule number = 55
+reduced rule number = 53
+reduced rule number = 47
+reduced rule number = 46
+reduced rule number = 42
+reduced rule number = 39
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 65
+reduced rule number = 96
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 66
+reduced rule number = 63
+reduced rule number = 61
+reduced rule number = 54
+reduced rule number = 53
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 65
+reduced rule number = 63
+reduced rule number = 61
+reduced rule number = 54
+reduced rule number = 56
+reduced rule number = 53
+reduced rule number = 47
+reduced rule number = 46
+reduced rule number = 42
+reduced rule number = 49
+reduced rule number = 43
+reduced rule number = 40
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 83
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 65
+reduced rule number = 63
+reduced rule number = 61
+reduced rule number = 54
+reduced rule number = 53
+reduced rule number = 47
+reduced rule number = 46
+reduced rule number = 42
+reduced rule number = 40
+reduced rule number = 37
+reduced rule number = 23
+reduced rule number = 41
+reduced rule number = 51
+reduced rule number = 44
+reduced rule number = 40
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 65
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 66
+reduced rule number = 63
+reduced rule number = 61
+reduced rule number = 54
+reduced rule number = 53
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 65
+reduced rule number = 63
+reduced rule number = 61
+reduced rule number = 54
+reduced rule number = 93
+reduced rule number = 92
+reduced rule number = 90
+reduced rule number = 87
+reduced rule number = 80
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 65
+reduced rule number = 63
+reduced rule number = 61
+reduced rule number = 54
+reduced rule number = 53
+reduced rule number = 47
+reduced rule number = 46
+reduced rule number = 42
+reduced rule number = 49
+reduced rule number = 43
+reduced rule number = 40
+reduced rule number = 95
+reduced rule number = 85
+reduced rule number = 80
+reduced rule number = 83
+reduced rule number = 76
+reduced rule number = 73
+reduced rule number = 68
+reduced rule number = 65
+reduced rule number = 63
+reduced rule number = 61
+reduced rule number = 54
+reduced rule number = 53
+reduced rule number = 47
+reduced rule number = 46
+reduced rule number = 42
+reduced rule number = 40
+reduced rule number = 37
+reduced rule number = 23
+reduced rule number = 41
+reduced rule number = 51
+reduced rule number = 44
+reduced rule number = 40
+reduced rule number = 37
+reduced rule number = 23
+reduced rule number = 6
+reduced rule number = 4
+reduced rule number = 3
+reduced rule number = 1
+--- mini C parser finished (tree produced) ---
+--- AST output ---
+ Nonterminal: PROGRAM
+      Nonterminal: DCL
+           Nonterminal: DCL_SPEC
+                Nonterminal: CONST_TYPE
+                Nonterminal: INT_TYPE
+           Nonterminal: DCL_ITEM
+                Nonterminal: SIMPLE_VAR
+                     Terminal: max
+                Terminal: 500
+      Nonterminal: FUNC_DEF
+           Nonterminal: FUNC_HEAD
+                Nonterminal: DCL_SPEC
+                     Nonterminal: VOID_TYPE
+                Terminal: main
+                Nonterminal: FORMAL_PARA
+           Nonterminal: COMPOUND_ST
+                Nonterminal: DCL_LIST
+                     Nonterminal: DCL
+                          Nonterminal: DCL_SPEC
+                               Nonterminal: INT_TYPE
+                          Nonterminal: DCL_ITEM
+                               Nonterminal: SIMPLE_VAR
+                                    Terminal: i
+                          Nonterminal: DCL_ITEM
+                               Nonterminal: SIMPLE_VAR
+                                    Terminal: j
+                          Nonterminal: DCL_ITEM
+                               Nonterminal: SIMPLE_VAR
+                                    Terminal: k
+                     Nonterminal: DCL
+                          Nonterminal: DCL_SPEC
+                               Nonterminal: INT_TYPE
+                          Nonterminal: DCL_ITEM
+                               Nonterminal: SIMPLE_VAR
+                                    Terminal: rem
+                          Nonterminal: DCL_ITEM
+                               Nonterminal: SIMPLE_VAR
+                                    Terminal: sum
+                Nonterminal: STAT_LIST
+                     Nonterminal: DEFAULT_ST
+                          Nonterminal: LT
+                               Terminal: i
+                          Nonterminal: CASE_ST
+                               Nonterminal: DO_WHILE_ST
+                                    Nonterminal: FOR_ST
+                                         Nonterminal: CONDITION_PART
+                                              Nonterminal: MUL_ASSIGN
+                                                   Nonterminal: LT
+                                                        Nonterminal: UNARY_MINUS
+                                                             Terminal: 2
+                     Nonterminal: EXP_ST
+                          Nonterminal: CASE_ST
+                               Nonterminal: DO_WHILE_ST
+                                    Nonterminal: FOR_ST
+                                         Nonterminal: CONDITION_PART
+                                              Nonterminal: SUB_ASSIGN
+                                                   Nonterminal: MUL_ASSIGN
+                                                        Nonterminal: LT
+                                                             Terminal: i
+                                                   Nonterminal: MUL_ASSIGN
+                                                        Nonterminal: LT
+                                                             Terminal: max
+                          Nonterminal: COMPOUND_ST
+                               Nonterminal: DCL_LIST
+                               Nonterminal: STAT_LIST
+                                    Nonterminal: DEFAULT_ST
+                                         Nonterminal: LT
+                                              Terminal: sum
+                                         Nonterminal: CASE_ST
+                                              Nonterminal: DO_WHILE_ST
+                                                   Nonterminal: FOR_ST
+                                                        Nonterminal: CONDITION_PART
+                                                             Nonterminal: MUL_ASSIGN
+                                                                  Nonterminal: LT
+                                                                       Nonterminal: UNARY_MINUS
+                                                                            Terminal: 0
+                                    Nonterminal: DEFAULT_ST
+                                         Nonterminal: LT
+                                              Terminal: k
+                                         Nonterminal: CASE_ST
+                                              Nonterminal: DO_WHILE_ST
+                                                   Nonterminal: FOR_ST
+                                                        Nonterminal: CONDITION_PART
+                                                             Nonterminal: MUL_ASSIGN
+                                                                  Nonterminal: LT
+                                                                       Terminal: i
+                                                                  Nonterminal: LT
+                                                                       Nonterminal: UNARY_MINUS
+                                                                            Terminal: 2
+                                    Nonterminal: DEFAULT_ST
+                                         Nonterminal: LT
+                                              Terminal: j
+                                         Nonterminal: CASE_ST
+                                              Nonterminal: DO_WHILE_ST
+                                                   Nonterminal: FOR_ST
+                                                        Nonterminal: CONDITION_PART
+                                                             Nonterminal: MUL_ASSIGN
+                                                                  Nonterminal: LT
+                                                                       Nonterminal: UNARY_MINUS
+                                                                            Terminal: 1
+                                    Nonterminal: EXP_ST
+                                         Nonterminal: CASE_ST
+                                              Nonterminal: DO_WHILE_ST
+                                                   Nonterminal: FOR_ST
+                                                        Nonterminal: CONDITION_PART
+                                                             Nonterminal: SUB_ASSIGN
+                                                                  Nonterminal: MUL_ASSIGN
+                                                                       Nonterminal: LT
+                                                                            Terminal: j
+                                                                  Nonterminal: MUL_ASSIGN
+                                                                       Nonterminal: LT
+                                                                            Terminal: k
+                                         Nonterminal: COMPOUND_ST
+                                              Nonterminal: DCL_LIST
+                                              Nonterminal: STAT_LIST
+                                                   Nonterminal: DEFAULT_ST
+                                                        Nonterminal: LT
+                                                             Terminal: rem
+                                                        Nonterminal: CASE_ST
+                                                             Nonterminal: DO_WHILE_ST
+                                                                  Nonterminal: FOR_ST
+                                                                       Nonterminal: CONDITION_PART
+                                                                            Nonterminal: MUL_ASSIGN
+                                                                                 Nonterminal: LOGICAL_AND
+                                                                                      Nonterminal: LT
+                                                                                           Terminal: i
+                                                                                      Nonterminal: LT
+                                                                                           Terminal: j
+                                                   Nonterminal: CASE_ST
+                                                        Nonterminal: DO_WHILE_ST
+                                                             Nonterminal: FOR_ST
+                                                                  Nonterminal: POST_PART
+                                                                       Nonterminal: CONDITION_PART
+                                                                            Nonterminal: MUL_ASSIGN
+                                                                                 Nonterminal: LT
+                                                                                      Terminal: rem
+                                                                       Nonterminal: MUL_ASSIGN
+                                                                            Nonterminal: LT
+                                                                                 Nonterminal: UNARY_MINUS
+                                                                                      Terminal: 0
+                                                   Nonterminal: CONTINUE_ST
+                                                        Nonterminal: LT
+                                                             Terminal: sum
+                                                        Nonterminal: CASE_ST
+                                                             Nonterminal: DO_WHILE_ST
+                                                                  Nonterminal: FOR_ST
+                                                                       Nonterminal: CONDITION_PART
+                                                                            Nonterminal: MUL_ASSIGN
+                                                                                 Nonterminal: LT
+                                                                                      Terminal: j
+                                                   Nonterminal: CASE_ST
+                                                        Nonterminal: DO_WHILE_ST
+                                                             Nonterminal: FOR_ST
+                                                                  Nonterminal: CONDITION_PART
+                                                                       Nonterminal: MUL_ASSIGN
+                                                                            Nonterminal: LT
+                                                                                 Terminal: j
+                                    Nonterminal: CASE_ST
+                                         Nonterminal: DO_WHILE_ST
+                                              Nonterminal: FOR_ST
+                                                   Nonterminal: POST_PART
+                                                        Nonterminal: CONDITION_PART
+                                                             Nonterminal: MUL_ASSIGN
+                                                                  Nonterminal: LT
+                                                                       Terminal: i
+                                                        Nonterminal: MUL_ASSIGN
+                                                             Nonterminal: LT
+                                                                  Terminal: sum
+                                    Nonterminal: CASE_ST
+                                         Nonterminal: DO_WHILE_ST
+                                              Nonterminal: FOR_ST
+                                                   Nonterminal: CONDITION_PART
+                                                        Nonterminal: MUL_ASSIGN
+                                                             Nonterminal: LE
+                                                                  Nonterminal: LT
+                                                                       Terminal: write
+                                                                  Nonterminal: SUB
+                                                                       Nonterminal: MUL
+                                                                            Nonterminal: DIV
+                                                                                 Nonterminal: CASE_ST
+                                                                                      Nonterminal: DO_WHILE_ST
+                                                                                           Nonterminal: FOR_ST
+                                                                                                Nonterminal: CONDITION_PART
+                                                                                                     Nonterminal: MUL_ASSIGN
+                                                                                                          Nonterminal: LT
+                                                                                                               Terminal: i
+                                    Nonterminal: CASE_ST
+                                         Nonterminal: DO_WHILE_ST
+                                              Nonterminal: FOR_ST
+                                                   Nonterminal: CONDITION_PART
+                                                        Nonterminal: MUL_ASSIGN
+                                                             Nonterminal: LT
+                                                                  Terminal: i

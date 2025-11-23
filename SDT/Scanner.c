@@ -58,7 +58,8 @@ do {
          token.number = tnum[index];
        else {                     // not found, identifier exit
 			  token.number = tident;
-			  strcpy_s(token.value.id, ID_LENGTH, id);
+			  strncpy(token.value.id, id, ID_LENGTH);
+              token.value.id[ID_LENGTH - 1] = '\0';
        }
      }  // end of identifier or keyword
      else if (isdigit(ch)) {  // number

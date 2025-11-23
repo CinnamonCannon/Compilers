@@ -1,4 +1,5 @@
-#include "MiniC.tbl"                 /* Mini C table for appendix A */
+#include "../MiniC Grammar/MiniC.tbl"                 /* Mini C table for appendix A */
+
 //#define  NO_RULES    97            /* number of rules */
 //#define  GOAL_RULE  (NO_RULES+1)   /* accept rule */
 //#define  NO_SYMBOLS  85            /* number of grammar symbols */

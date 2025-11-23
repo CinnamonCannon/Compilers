@@ -1,32 +1,15 @@
-#include "MiniC.tbl"    
-#include "Scanner.h"             /* Mini C table for appendix A */
-//#define  NO_RULES    97            /* number of rules */
-//#define  GOAL_RULE  (NO_RULES+1)   /* accept rule */
-//#define  NO_SYMBOLS  85            /* number of grammar symbols */
-//#define  NO_STATES  153            /* number of states */
-#define  PS_SIZE    100              /* size of parsing stack */
+#include <stdio.h>
+#include <stdlib.h>
 
-typedef struct nodeType {
-	struct tokenType token;            	// 토큰 종류
-	enum { terminal, nonterm } noderep; 	// 노드의 종류
-	struct nodeType* son;             	// 왼쪽 링크
-	struct nodeType* brother;         	// 오른쪽 링크
-	struct nodeType* father;	   	// 상위 링크
-} Node;
+#include "Parser.h"
+#include "MiniC.tbl"
 
-void semantic(int);
-void printToken(struct tokenType token);
-void dumpStack();
-void errorRecovery();
+#define  PS_SIZE    100
 
 Node* buildNode(struct tokenType token);
 Node* buildTree(int nodeNumber, int rhsLength);
 int meaningfulToken(struct tokenType token);
 
-
-/***************************************************************************
- *  문법과 tbl이 확장된 경우, PGS의 출력을 확인하며 변경 사항을 적용해줘야 함.
- ***************************************************************************/ 
 enum nodeNumber {
 	ERROR_NODE,
 	PROGRAM,
@@ -223,6 +206,7 @@ int ruleName[] = {
     0            /* 112 */
 };
 
+int errcnt = 0;
 int sp;                               // stack pointer
 int stateStack[PS_SIZE];              // state stack
 int symbolStack[PS_SIZE];             // symbol stack
@@ -233,10 +217,10 @@ Node* parser()
 	extern int parsingTable[NO_STATES][NO_SYMBOLS + 1];
 	extern int leftSymbol[NO_RULES + 1], rightLength[NO_RULES + 1];
 	int entry, ruleNumber, lhs;
-	int currentState;
+	int currentState = 0;
 	struct tokenType token;
 	Node* ptr;
-
+	
 	sp = 0; stateStack[sp] = 0;  // initial state
 	token = scanner();
 	while (1) {
@@ -259,10 +243,11 @@ Node* parser()
 			ruleNumber = -entry;
 			if (ruleNumber == GOAL_RULE) /* accept action */
 			{
-				//                      printf(" *** valid source ***\n");
+				// if (errcnt == 0) printf(" *** valid source ***\n");
+				// else  printf(" *** error in source : %d\n", errcnt);
 				return valueStack[sp - 1];
 			}
-			//                 semantic(ruleNumber);
+			semantic(ruleNumber);
 			ptr = buildTree(ruleName[ruleNumber], rightLength[ruleNumber]);
 			sp = sp - rightLength[ruleNumber];
 			lhs = leftSymbol[ruleNumber];
@@ -275,6 +260,7 @@ Node* parser()
 		else                               /* error action */
 		{
 			printf(" === error in source ===\n");
+			errcnt++;
 			printf("Current Token : ");
 			printToken(token);
 			dumpStack();
@@ -417,4 +403,35 @@ Node* buildTree(int nodeNumber, int rhsLength)
 		return ptr;
 	}
 	else return first;
+}
+
+void printNode(Node* pt, int indent);
+
+void printTree(Node* pt, int indent)
+{
+	Node* p = pt;
+	while (p != NULL) {
+		printNode(p, indent);
+		if (p->noderep == nonterm) printTree(p->son, indent + 5);
+		p = p->brother;
+	}
+}
+
+void printNode(Node* pt, int indent)
+{
+	extern FILE* astFile;
+	int i;
+
+	for (i = 1; i <= indent; i++) fprintf(astFile, " ");
+	if (pt->noderep == terminal) {
+		if (pt->token.number == tident)
+			fprintf(astFile, " Terminal: %s", pt->token.value.id);
+		else if (pt->token.number == tnumber)
+			fprintf(astFile, " Terminal: %d", pt->token.value.num);
+	}
+	else { // nonterminal node
+		i = (int)(pt->token.number);
+		fprintf(astFile, " Nonterminal: %s", nodeName[i]);
+	}
+	fprintf(astFile, "\n");
 }
