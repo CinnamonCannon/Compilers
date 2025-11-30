@@ -1,0 +1,210 @@
+
+ line       object           ucode  source program
+
+   1    (35  235    2)     main       proc           235   2     2
+   2    (38    2    1)                sym            2     1     1
+   3    (38    2    2)                sym            2     2     1
+   4    (38    2    3)                sym            2     3     1
+   5    (38    2    4)                sym            2     4     1
+   6    (38    2    5)                sym            2     5     1
+   7    (38    2    6)                sym            2     6     1
+   8    (38    2    7)                sym            2     7     1
+   9    (38    2    8)                sym            2     8     1
+  10    (38    2    9)                sym            2     9     1
+  11    (38    2   10)                sym            2     10    225
+  12    (34          )     $$LOOP     nop
+  13    (23          )                ldp
+  14    (21    2    1)                lda            2     1
+  15    (29   -1     )                call           read
+  16    (19    2    1)                lod            2     1
+  17    (20    0     )                ldc            0
+  18    (17          )                eq
+  19    (27  159     )                tjp            $$EXIT
+  20    (19    2    1)                lod            2     1
+  21    (20    2     )                ldc            2
+  22    (10          )                mod
+  23    (20    0     )                ldc            0
+  24    (17          )                eq
+  25    (27   12     )                tjp            $$LOOP
+  26    (20    0     )                ldc            0
+  27    (24    2    2)                str            2     2
+  28    (34          )     $$INIT     nop
+  29    (19    2    2)                lod            2     2
+  30    (20  225     )                ldc            225
+  31    (15          )                ge
+  32    (27   42     )                tjp            $$INIT_E
+  33    (21    2   10)                lda            2     10
+  34    (19    2    2)                lod            2     2
+  35    ( 6          )                add
+  36    (20    0     )                ldc            0
+  37    (25          )                sti
+  38    (19    2    2)                lod            2     2
+  39    ( 2          )                inc
+  40    (24    2    2)                str            2     2
+  41    (26   28     )                ujp            $$INIT
+  42    (34          )     $$INIT_E   nop
+  43    (20    0     )                ldc            0
+  44    (24    2    4)                str            2     4
+  45    (19    2    1)                lod            2     1
+  46    (20    2     )                ldc            2
+  47    ( 9          )                div
+  48    (24    2    5)                str            2     5
+  49    (20    1     )                ldc            1
+  50    (24    2    6)                str            2     6
+  51    (19    2    1)                lod            2     1
+  52    (19    2    1)                lod            2     1
+  53    ( 8          )                mult
+  54    (24    2    7)                str            2     7
+  55    (34          )     $$FILL     nop
+  56    (19    2    6)                lod            2     6
+  57    (19    2    7)                lod            2     7
+  58    (13          )                gt
+  59    (27  121     )                tjp            $$PRINT
+  60    (21    2   10)                lda            2     10
+  61    (19    2    4)                lod            2     4
+  62    (20   15     )                ldc            15
+  63    ( 8          )                mult
+  64    (19    2    5)                lod            2     5
+  65    ( 6          )                add
+  66    ( 6          )                add
+  67    (19    2    6)                lod            2     6
+  68    (25          )                sti
+  69    (19    2    6)                lod            2     6
+  70    ( 2          )                inc
+  71    (24    2    6)                str            2     6
+  72    (19    2    4)                lod            2     4
+  73    (24    2    8)                str            2     8
+  74    (19    2    5)                lod            2     5
+  75    (24    2    9)                str            2     9
+  76    (19    2    4)                lod            2     4
+  77    ( 3          )                dec
+  78    (24    2    4)                str            2     4
+  79    (19    2    5)                lod            2     5
+  80    ( 2          )                inc
+  81    (24    2    5)                str            2     5
+  82    (19    2    4)                lod            2     4
+  83    (20    0     )                ldc            0
+  84    (14          )                lt
+  85    (28   89     )                fjp            $$CHK_C
+  86    (19    2    1)                lod            2     1
+  87    ( 3          )                dec
+  88    (24    2    4)                str            2     4
+  89    (34          )     $$CHK_C    nop
+  90    (19    2    5)                lod            2     5
+  91    (19    2    1)                lod            2     1
+  92    (15          )                ge
+  93    (28   96     )                fjp            $$CHK_O
+  94    (20    0     )                ldc            0
+  95    (24    2    5)                str            2     5
+  96    (34          )     $$CHK_O    nop
+  97    (21    2   10)                lda            2     10
+  98    (19    2    4)                lod            2     4
+  99    (20   15     )                ldc            15
+ 100    ( 8          )                mult
+ 101    (19    2    5)                lod            2     5
+ 102    ( 6          )                add
+ 103    ( 6          )                add
+ 104    (22          )                ldi
+ 105    (20    0     )                ldc            0
+ 106    (18          )                ne
+ 107    (28   55     )                fjp            $$FILL
+ 108    (19    2    8)                lod            2     8
+ 109    ( 2          )                inc
+ 110    (24    2    4)                str            2     4
+ 111    (19    2    4)                lod            2     4
+ 112    (19    2    1)                lod            2     1
+ 113    (17          )                eq
+ 114    (28  117     )                fjp            $$SKIP_W
+ 115    (20    0     )                ldc            0
+ 116    (24    2    4)                str            2     4
+ 117    (34          )     $$SKIP_W   nop
+ 118    (19    2    9)                lod            2     9
+ 119    (24    2    5)                str            2     5
+ 120    (26   55     )                ujp            $$FILL
+ 121    (34          )     $$PRINT    nop
+ 122    (20    0     )                ldc            0
+ 123    (24    2    2)                str            2     2
+ 124    (34          )     $$PR_R     nop
+ 125    (19    2    2)                lod            2     2
+ 126    (19    2    1)                lod            2     1
+ 127    (15          )                ge
+ 128    (27  157     )                tjp            $$PR_D
+ 129    (20    0     )                ldc            0
+ 130    (24    2    3)                str            2     3
+ 131    (34          )     $$PR_C     nop
+ 132    (19    2    3)                lod            2     3
+ 133    (19    2    1)                lod            2     1
+ 134    (15          )                ge
+ 135    (27  150     )                tjp            $$PR_RE
+ 136    (23          )                ldp
+ 137    (21    2   10)                lda            2     10
+ 138    (19    2    2)                lod            2     2
+ 139    (20   15     )                ldc            15
+ 140    ( 8          )                mult
+ 141    (19    2    3)                lod            2     3
+ 142    ( 6          )                add
+ 143    ( 6          )                add
+ 144    (22          )                ldi
+ 145    (29   -2     )                call           write
+ 146    (19    2    3)                lod            2     3
+ 147    ( 2          )                inc
+ 148    (24    2    3)                str            2     3
+ 149    (26  131     )                ujp            $$PR_C
+ 150    (34          )     $$PR_RE    nop
+ 151    (23          )                ldp
+ 152    (29   -3     )                call           lf
+ 153    (19    2    2)                lod            2     2
+ 154    ( 2          )                inc
+ 155    (24    2    2)                str            2     2
+ 156    (26  124     )                ujp            $$PR_R
+ 157    (34          )     $$PR_D     nop
+ 158    (26   12     )                ujp            $$LOOP
+ 159    (34          )     $$EXIT     nop
+ 160    (30          )                ret
+ 161    (37    0     )                bgn            0
+ 162    (23          )                ldp
+ 163    (29    1     )                call           main
+ 164    (36          )                end
+
+
+   ****    Result    ****
+
+ 8 1 6
+ 3 5 7
+ 4 9 2
+ 17 24 1 8 15
+ 23 5 7 14 16
+ 4 6 13 20 22
+ 10 12 19 21 3
+ 11 18 25 2 9
+
+
+
+             ##### Statistics #####
+
+
+    ****  Static Instruction Counts  ****
+
+inc    =  6       dec    =  2       add    =  7       mult   =  4       
+div    =  1       mod    =  1       gt     =  1       lt     =  1       
+ge     =  4       eq     =  3       ne     =  1       lod    =  36      
+ldc    =  18      lda    =  5       ldi    =  2       ldp    =  4       
+str    =  20      sti    =  2       ujp    =  5       tjp    =  6       
+fjp    =  4       call   =  4       ret    =  1       nop    =  13      
+proc   =  1       end    =  1       bgn    =  1       sym    =  10      
+
+
+    ****  Dynamic instruction counts  ****
+
+inc    =  568       dec    =  42        add    =  654       mult   =  104       
+div    =  2         mod    =  3         gt     =  36        lt     =  34        
+ge     =  538       eq     =  15        ne     =  34        lod    =  2133      
+ldc    =  1110      lda    =  556       ldi    =  68        ldp    =  47        
+str    =  716       sti    =  484       ujp    =  502       tjp    =  547       
+fjp    =  110       call   =  47        ret    =  1         nop    =  635       
+proc   =  1         end    =  1         bgn    =  1         sym    =  10        
+
+
+ Executable instruction count  =   8352
+
+ Total execution cycle         =   67615

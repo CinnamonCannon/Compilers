@@ -1,0 +1,164 @@
+main       proc           235   2     2
+           sym            2     1     1
+           sym            2     2     1
+           sym            2     3     1
+           sym            2     4     1
+           sym            2     5     1
+           sym            2     6     1
+           sym            2     7     1
+           sym            2     8     1
+           sym            2     9     1
+           sym            2     10    225
+$$LOOP     nop
+           ldp
+           lda            2     1
+           call           read
+           lod            2     1
+           ldc            0
+           eq
+           tjp            $$EXIT
+           lod            2     1
+           ldc            2
+           mod
+           ldc            0
+           eq
+           tjp            $$LOOP
+           ldc            0
+           str            2     2
+$$INIT     nop
+           lod            2     2
+           ldc            225
+           ge
+           tjp            $$INIT_E
+           lda            2     10
+           lod            2     2
+           add
+           ldc            0
+           sti
+           lod            2     2
+           inc
+           str            2     2
+           ujp            $$INIT
+$$INIT_E   nop
+           ldc            0
+           str            2     4
+           lod            2     1
+           ldc            2
+           div
+           str            2     5
+           ldc            1
+           str            2     6
+           lod            2     1
+           lod            2     1
+           mult
+           str            2     7
+$$FILL     nop
+           lod            2     6
+           lod            2     7
+           gt
+           tjp            $$PRINT
+           lda            2     10
+           lod            2     4
+           ldc            15
+           mult
+           lod            2     5
+           add
+           add
+           lod            2     6
+           sti
+           lod            2     6
+           inc
+           str            2     6
+           lod            2     4
+           str            2     8
+           lod            2     5
+           str            2     9
+           lod            2     4
+           dec
+           str            2     4
+           lod            2     5
+           inc
+           str            2     5
+           lod            2     4
+           ldc            0
+           lt
+           fjp            $$CHK_C
+           lod            2     1
+           dec
+           str            2     4
+$$CHK_C    nop
+           lod            2     5
+           lod            2     1
+           ge
+           fjp            $$CHK_O
+           ldc            0
+           str            2     5
+$$CHK_O    nop
+           lda            2     10
+           lod            2     4
+           ldc            15
+           mult
+           lod            2     5
+           add
+           add
+           ldi
+           ldc            0
+           ne
+           fjp            $$FILL
+           lod            2     8
+           inc
+           str            2     4
+           lod            2     4
+           lod            2     1
+           eq
+           fjp            $$SKIP_W
+           ldc            0
+           str            2     4
+$$SKIP_W   nop
+           lod            2     9
+           str            2     5
+           ujp            $$FILL
+$$PRINT    nop
+           ldc            0
+           str            2     2
+$$PR_R     nop
+           lod            2     2
+           lod            2     1
+           ge
+           tjp            $$PR_D
+           ldc            0
+           str            2     3
+$$PR_C     nop
+           lod            2     3
+           lod            2     1
+           ge
+           tjp            $$PR_RE
+           ldp
+           lda            2     10
+           lod            2     2
+           ldc            15
+           mult
+           lod            2     3
+           add
+           add
+           ldi
+           call           write
+           lod            2     3
+           inc
+           str            2     3
+           ujp            $$PR_C
+$$PR_RE    nop
+           ldp
+           call           lf
+           lod            2     2
+           inc
+           str            2     2
+           ujp            $$PR_R
+$$PR_D     nop
+           ujp            $$LOOP
+$$EXIT     nop
+           ret
+           bgn            0
+           ldp
+           call           main
+           end

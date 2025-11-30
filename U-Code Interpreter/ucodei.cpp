@@ -30,7 +30,7 @@ enum opcode {
 	dump, none
 };
 
-char* opcodeName[NO_OPCODES] = {
+const char* opcodeName[NO_OPCODES] = {
 	 "notop", "neg",  "inc", "dec",  "dup", "swp",  "add", "sub",
 	 "mult",  "div",  "mod", "and",  "or",  "gt",   "lt",  "ge",
 	 "le",    "eq",   "ne",	 "lod",  "ldc", "lda",  "ldi", "ldp",
@@ -76,7 +76,7 @@ typedef struct {
 
 Instruction instrBuf[MAXINSTR];
 
-void errmsg(char* s, char* s2 = "")
+void errmsg(const char* s, const char* s2 = "")
 {
 	cerr << "error !!!  " << s << ":  " << s2 << "\n";
 	exit(1);
@@ -674,7 +674,7 @@ void Interpret::execute(int startAddr)
 	statistic();
 }
 
-void main(int argc, char* argv[])
+int main(int argc, char* argv[])
 {
 	Assemble sourceProgram;
 	Interpret binaryProgram;
@@ -692,4 +692,5 @@ void main(int argc, char* argv[])
 
 	inputFile.close();
 	outputFile.close();
+	return 0;
 }
