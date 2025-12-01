@@ -2,16 +2,17 @@
 #include <string.h>
 #include <ctype.h>
 #include <stdlib.h>
+#include "srcInclude.h"
 
 FILE *astFile;                          // AST file
 FILE *sourceFile;                       // miniC source program
 FILE *ucodeFile;                        // ucode file
 
-#include "src\Scanner.c"
-#include "src\Parser.c"
-#include "src\sdt.c"
-#include "src\EmitCode.c"
-#include "src\SymTab.c"
+// #include "src\Scanner.c"
+// #include "src\Parser.c"
+// #include "src\sdt.c"
+// #include "src\EmitCode.c"
+// #include "src\SymTab.c"
 
 void codeGen(Node *ptr);
 void processDeclaration(Node *ptr);

@@ -1,0 +1,5 @@
+#include "src/Scanner.c"
+#include "src/Parser.c"
+//#include "src\sdt.c"
+#include "src/EmitCode.c"
+#include "src/SymTab.c"
